@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IG:ไม่บอกกกก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin:0;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#0b0b0b;
+      font-family:"Inter", sans-serif;
+      color:white;
+    }
+
+    .card {
+      text-align:center;
+      padding:40px;
+      background:rgba(255,255,255,0.04);
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(6px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .bigtext {
+      font-size: clamp(28px, 6vw, 56px);
+      font-weight:800;
+      letter-spacing:3px;
+      margin:0;
+      line-height:1.2;
+    }
+
+    /* ===== rainbow text ===== */
+    .rainbow {
+      background: linear-gradient(
+        270deg,
+        #ff0000,
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #8f00ff,
+        #ff0000
+      );
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbowFlow 10s linear infinite;
+    }
+
+    @keyframes rainbowFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .sub {
+      margin-top:12px;
+      color:rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="bigtext">IG:<span class="rainbow">ไม่บอกกกก</span></h1>
+    <p class="sub">สีรุ้งเคลื่อนไหวตลอดเวลา 🌈</p>
+  </div>
+</body>
+</html>
